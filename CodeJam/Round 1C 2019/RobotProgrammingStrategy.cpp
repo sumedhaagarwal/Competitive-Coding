@@ -96,5 +96,5 @@ int main() {
 	    }
 	    findSol();
 	    cout<<"Case #"<<t<<": "<<ans<<endl;
-	}
+	} 
 }
