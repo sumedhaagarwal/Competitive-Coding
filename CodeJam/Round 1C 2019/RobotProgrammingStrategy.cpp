@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int T,n,reqMoves,rock,paper,scissors;
+int T,n,rock,paper,scissors;
 vector<string> moves;
 unordered_map<int,int> dead;
 string str,ans;
@@ -78,7 +78,6 @@ int findSol(){
 
 void refresh(){
     dead.clear();
-    reqMoves=0;
     ans.clear();
     moves.clear();
 }
@@ -90,9 +89,7 @@ int main() {
 	    cin>>n;
 	    for(int i=0;i<n;i++)    {
 	        cin>>str;
-	        int sj=str.size();
 	        moves.push_back(str);
-	        reqMoves=max(reqMoves,sj);
 	    }
 	    findSol();
 	    cout<<"Case #"<<t<<": "<<ans<<endl;
