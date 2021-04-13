@@ -37,7 +37,7 @@ void findCol(){
         }
     }
 }
-
+ 
 
 void findSol(){
     findRow();
